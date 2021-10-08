@@ -87,4 +87,4 @@ def Main():
 
 
     #Exportando para Exel
-    tabela.to_excel("B:\Jurídico\Bases\Fatos\IGPDI.xlsx")
+    tabela.to_excel("shared/IGPDI.xlsx")

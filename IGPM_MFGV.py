@@ -82,4 +82,4 @@ def Main():
     tabela = tabela.set_index(cabecalho)
 
     # Exportando para Exel
-    tabela.to_excel("B:\Jurídico\Bases\Fatos\IGPM.xlsx")
+    tabela.to_excel("shared/IGPM.xlsx")

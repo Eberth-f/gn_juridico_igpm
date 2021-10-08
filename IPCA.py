@@ -72,4 +72,4 @@ def Main():
     # Definindo o Mês como o index se a tabela estiver na horizontal
     tabela = tabela.set_index(cabecalho)
 
-    tabela.to_excel("B:\Jurídico\Bases\Fatos\IPCA.xlsx")
+    tabela.to_excel("shared/IPCA.xlsx")
