@@ -52,18 +52,13 @@ def Main():
     titulo = capturando.findAll('div', {'class': 'lg_01_0_16emcr'}, limit=1)[0].getText()
 
     # Capturando os dados
-    dados = capturando.find(string="IGP-M/FGV – Fechamento do mês – 2021").parent.parent.parent.getText(' ')
-
+    dados = capturando.find(string="Acumulado").parent.parent.parent.parent.getText(' ')
+    #dados = capturando.findAll('div', {'class': 'div-mob1'}, limit=1)[0].getText(' ')
+    #print(dados)
     # Inserindo o Titulo
     titulo = capturando.find(string="IGP-M/FGV – Fechamento do mês – 2021")
 
-    indice = dados.index('12 meses')
-    indice += 9
-    dados[indice]
-
-    dados_atual = dados[indice:indice + 40]
-
-    all_dados = dados_atual.split()
+    all_dados = dados[95:136].split()
 
     all_dados.pop(1)
     all_dados.pop(1)
@@ -83,3 +78,4 @@ def Main():
 
     # Exportando para Exel
     tabela.to_excel("shared/IGPM.xlsx")
+    #tabela.to_excel("B:\Juridico\Bases\Fatos\IGPM.xlsx")

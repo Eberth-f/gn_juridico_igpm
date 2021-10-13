@@ -73,3 +73,4 @@ def Main():
     tabela = tabela.set_index(cabecalho)
 
     tabela.to_excel("shared/IPCA.xlsx")
+    #tabela.to_excel("B:\Juridico\Bases\Fatos\IPCA.xlsx")
